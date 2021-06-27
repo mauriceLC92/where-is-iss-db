@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:seed:run:local": "knex seed:run",
+    "db:seed:run": "NODE_ENV=development knex seed:run"
   },
   "author": "",
   "license": "ISC",
